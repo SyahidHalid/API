@@ -8,3 +8,5 @@ data_text = str(data).splitlines()[-6].split(':')
 #rate=float(data_text[2].replace('"',''))
 
 print(data_text)
+
+#load public key if path public n private key
