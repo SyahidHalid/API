@@ -14,3 +14,7 @@ if __name__ == '__main__':
 
 
 #http://127.0.0.1:5000/api?param=World
+
+# def my_function(param):
+#     return f"Hello, {param}!"
+
