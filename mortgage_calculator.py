@@ -1,3 +1,7 @@
+# pip install --upgrade certifi --trusted-host pypi.org --trusted-host files.pythonhosted.org
+# streamlit run Example_Calculator.py --server.port 8502
+
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt

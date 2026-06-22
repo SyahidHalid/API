@@ -1,7 +1,9 @@
 #https://data.snb.ch/api/cube/snbbipo/data/csv/en
 
 import requests
-data = requests.get('https://data.snb.ch/api/cube/snbbipo/data/csv/en').text
+import pandas as pd 
+
+data = requests.get('https://data.snb.ch/api/cube/snbbipo/data/csv/en', verify=False).text
 
 data_text = str(data).splitlines()[-6].split(':')
 

@@ -1,6 +1,5 @@
-import pyodbc
-import pandas as pd
- 
+# !pip install pyodbc --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
     # setup url 
 
     # load privatekey
@@ -14,6 +13,9 @@ import pandas as pd
     # check if 200 
     # else throw error
 
+import pyodbc
+import pandas as pd
+ 
 try:
     conn = pyodbc.connect("Driver={ODBC Driver 18 for SQL Server};"+
                         "Server=10.32.1.51,1455;"+
@@ -29,9 +31,11 @@ try:
         print('row = %r' % (row,))
    
     df=pd.read_sql_query("select * from usermaster",conn)
-    print(df)
+    #print(df)
     print('Connected')
 except pyodbc.Error as ex:
     print('Failed',ex)
 
+
+df
 
